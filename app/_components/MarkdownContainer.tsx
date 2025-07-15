@@ -45,7 +45,7 @@ const MarkdownContainer = ({
     const formattedMarkdown = await markdownToHtml(content);
     setIsFormattedMarkdown(formattedMarkdown);
   }
-  console.log(isLoading);
+
   return (
     <div
       className={`${!isSidebarOpen ? "col-span-2" : ""} md:min-w-[768px] lg:min-w-[1024px] xl:min-w-[1280px]`}
