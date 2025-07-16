@@ -52,7 +52,7 @@ const Sidebar = ({ markdowns }: SidebarProps) => {
             />
           ))}
       </div>
-      <div className="mt-auto flex items-center gap-2.5">
+      <div className="mt-auto flex items-center gap-2.5 pt-8">
         <div>
           <BsMoon
             className={`${theme === "dark" ? "text-100" : "text-600"} h-4 w-4`}
