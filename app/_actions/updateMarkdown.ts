@@ -17,6 +17,8 @@ export async function updateMarkdown(
   } else {
     return { failed: true };
   }
-  revalidatePath(`/`);
+  revalidatePath(`/${id}`);
+  revalidatePath("/");
+  revalidatePath("/newMarkdown");
   redirect(`/${id}`);
 }

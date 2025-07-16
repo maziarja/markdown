@@ -9,5 +9,7 @@ export async function deleteMarkdown(id: string) {
   await connectDB();
   await Markdown.findByIdAndDelete(id);
   revalidatePath(`/${id}`);
+  revalidatePath("/");
+  revalidatePath("/newMarkdown");
   redirect("/");
 }
