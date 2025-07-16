@@ -1,6 +1,7 @@
 "use server";
 
 import Markdown from "@/models/markdown";
+import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
 export async function updateMarkdown(
@@ -16,6 +17,6 @@ export async function updateMarkdown(
   } else {
     return { failed: true };
   }
-
+  revalidatePath(`/`);
   redirect(`/${id}`);
 }
