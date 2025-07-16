@@ -13,6 +13,7 @@ type SidebarProps = {
 };
 
 const Sidebar = ({ markdowns }: SidebarProps) => {
+  console.log(markdowns);
   const { setIsSidebarOpen, isSidebarOpen } = useSidebar();
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
