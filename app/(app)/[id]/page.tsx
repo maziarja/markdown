@@ -1,7 +1,7 @@
 import connectDB from "@/config/database";
 import Markdown, { MarkdownType } from "@/models/markdown";
-import { convertToObject } from "../_lib/convertToObject";
-import MarkdownPageClient from "../_components/MarkdownPageClient";
+import { convertToObject } from "../../_lib/convertToObject";
+import MarkdownPageClient from "../../_components/MarkdownPageClient";
 
 type MarkdownPageProps = {
   params: Promise<{ id: string }>;

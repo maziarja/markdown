@@ -1,7 +1,7 @@
 import connectDB from "@/config/database";
 import Markdown, { type MarkdownType } from "@/models/markdown";
-import MainPage from "./_components/MainPage";
-import { convertToObject } from "./_lib/convertToObject";
+import MainPage from "../_components/MainPage";
+import { convertToObject } from "../_lib/convertToObject";
 
 const Page = async () => {
   await connectDB();

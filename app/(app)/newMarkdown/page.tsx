@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
-import Navbar from "../_components/Navbar";
-import NewMarkdownContainer from "../_components/NewMarkdownContainer";
-import { useSidebar } from "../_contexts/SidebarContext";
+import Navbar from "../../_components/Navbar";
+import NewMarkdownContainer from "../../_components/NewMarkdownContainer";
+import { useSidebar } from "../../_contexts/SidebarContext";
 
 const NewMarkdown = () => {
   const [content, setContent] = useState("");
